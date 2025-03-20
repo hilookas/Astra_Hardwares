@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="astra_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.1726 -0.0011902 0.37074"
+        rpy="0 0 0" />
+      <mass
+        value="17.285" />
+      <inertia
+        ixx="0.88736"
+        ixy="-9.7406E-10"
+        ixz="-0.0042126"
+        iyy="0.90938"
+        iyz="1.6278E-09"
+        izz="0.076259" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_r1">
+    <inertial>
+      <origin
+        xyz="0.027157 -3.0871E-12 -1.5958E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.70739" />
+      <inertia
+        ixx="0.00060081"
+        ixy="6.2989E-14"
+        ixz="-1.3373E-13"
+        iyy="0.00042262"
+        iyz="1.4866E-09"
+        izz="0.0002763" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r1"
+    type="prismatic">
+    <origin
+      xyz="-0.0405 -0.065 0.227"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_r1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_r2">
+    <inertial>
+      <origin
+        xyz="0.19797 -0.02415 -2.5183E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.75209" />
+      <inertia
+        ixx="0.0004318"
+        ixy="0.00031904"
+        ixz="-1.4792E-09"
+        iyy="0.0020715"
+        iyz="1.806E-10"
+        izz="0.0019227" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r2"
+    type="revolute">
+    <origin
+      xyz="0.068 0 0"
+      rpy="0 0 0.18555" />
+    <parent
+      link="link_r1" />
+    <child
+      link="link_r2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_r3">
+    <inertial>
+      <origin
+        xyz="0.10783 1.63E-05 -0.0023873"
+        rpy="0 0 0" />
+      <mass
+        value="0.39722" />
+      <inertia
+        ixx="0.00020574"
+        ixy="-1.067E-09"
+        ixz="1.0482E-06"
+        iyy="0.00075294"
+        iyz="2.842E-10"
+        izz="0.00062472" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r3"
+    type="revolute">
+    <origin
+      xyz="0.29812 0 0"
+      rpy="0 0 1.3852" />
+    <parent
+      link="link_r2" />
+    <child
+      link="link_r3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_r4">
+    <inertial>
+      <origin
+        xyz="7.4339E-05 0.033099 -0.027091"
+        rpy="0 0 0" />
+      <mass
+        value="0.087098" />
+      <inertia
+        ixx="3.1196E-05"
+        ixy="3.7815E-10"
+        ixz="-1.0586E-09"
+        iyy="2.6879E-05"
+        iyz="-5.5018E-06"
+        izz="1.8673E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r4"
+    type="revolute">
+    <origin
+      xyz="0.265 0 -0.087"
+      rpy="3.1416 0 0" />
+    <parent
+      link="link_r3" />
+    <child
+      link="link_r4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_r5">
+    <inertial>
+      <origin
+        xyz="0.01097 -0.0063842 -0.0053324"
+        rpy="0 0 0" />
+      <mass
+        value="0.076944" />
+      <inertia
+        ixx="1.0865E-05"
+        ixy="1.722E-06"
+        ixz="-1.6372E-06"
+        iyy="2.1382E-05"
+        iyz="1.7243E-06"
+        izz="1.8572E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r5"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_r4" />
+    <child
+      link="link_r5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_r6">
+    <inertial>
+      <origin
+        xyz="0.038451 4.6462E-05 0.063125"
+        rpy="0 0 0" />
+      <mass
+        value="0.13935" />
+      <inertia
+        ixx="9.6304E-05"
+        ixy="-3.781E-10"
+        ixz="-1.7516E-05"
+        iyy="7.1049E-05"
+        iyz="-1.065E-09"
+        izz="8.241E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_r5" />
+    <child
+      link="link_r6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_r7r">
+    <inertial>
+      <origin
+        xyz="-0.083182 0.0061024 0.0093037"
+        rpy="0 0 0" />
+      <mass
+        value="0.046957" />
+      <inertia
+        ixx="7.5505E-06"
+        ixy="2.8052E-06"
+        ixz="5.9927E-06"
+        iyy="9.4772E-05"
+        iyz="-5.5999E-07"
+        izz="8.8929E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r7r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r7r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r7r"
+    type="prismatic">
+    <origin
+      xyz="0.078 0 0.195"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_r6" />
+    <child
+      link="link_r7r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.06"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_r7l">
+    <inertial>
+      <origin
+        xyz="-0.087979 0.0061024 -0.0093037"
+        rpy="0 0 0" />
+      <mass
+        value="0.046957" />
+      <inertia
+        ixx="7.5505E-06"
+        ixy="2.8568E-06"
+        ixz="-6.0106E-06"
+        iyy="9.56E-05"
+        iyz="5.5999E-07"
+        izz="8.9757E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r7l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_r7l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r7l"
+    type="prismatic">
+    <origin
+      xyz="0.078 0 0.195"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_r6" />
+    <child
+      link="link_r7l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.06"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l1">
+    <inertial>
+      <origin
+        xyz="0.027157 -4.3066E-13 -6.6736E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.70739" />
+      <inertia
+        ixx="0.00060081"
+        ixy="-4.2708E-15"
+        ixz="-1.6897E-15"
+        iyy="0.00042262"
+        iyz="1.4866E-09"
+        izz="0.0002763" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l1"
+    type="prismatic">
+    <origin
+      xyz="-0.0405 0.065 0.227"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_l1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l2">
+    <inertial>
+      <origin
+        xyz="0.19797 0.02415 1.1147E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.75209" />
+      <inertia
+        ixx="0.0004318"
+        ixy="-0.00031904"
+        ixz="1.4791E-09"
+        iyy="0.0020715"
+        iyz="1.8051E-10"
+        izz="0.0019227" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l2"
+    type="revolute">
+    <origin
+      xyz="0.068 0 0"
+      rpy="0 0 -0.18555" />
+    <parent
+      link="link_l1" />
+    <child
+      link="link_l2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l3">
+    <inertial>
+      <origin
+        xyz="0.10783 1.63E-05 -0.0023873"
+        rpy="0 0 0" />
+      <mass
+        value="0.39722" />
+      <inertia
+        ixx="0.00020574"
+        ixy="-1.067E-09"
+        ixz="1.0482E-06"
+        iyy="0.00075294"
+        iyz="2.844E-10"
+        izz="0.00062472" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l3"
+    type="revolute">
+    <origin
+      xyz="0.29812 0 0"
+      rpy="0 0 -1.3852" />
+    <parent
+      link="link_l2" />
+    <child
+      link="link_l3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l4">
+    <inertial>
+      <origin
+        xyz="-7.4339E-05 -0.033099 -0.027091"
+        rpy="0 0 0" />
+      <mass
+        value="0.087098" />
+      <inertia
+        ixx="3.1196E-05"
+        ixy="3.7816E-10"
+        ixz="1.0586E-09"
+        iyy="2.6879E-05"
+        iyz="5.5018E-06"
+        izz="1.8673E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l4"
+    type="revolute">
+    <origin
+      xyz="0.265 0 -0.087"
+      rpy="3.1416 0 0" />
+    <parent
+      link="link_l3" />
+    <child
+      link="link_l4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l5">
+    <inertial>
+      <origin
+        xyz="0.011811 0.0068737 -0.0043391"
+        rpy="0 0 0" />
+      <mass
+        value="0.071465" />
+      <inertia
+        ixx="1.0672E-05"
+        ixy="-1.722E-06"
+        ixz="-1.6393E-06"
+        iyy="2.1189E-05"
+        iyz="-1.7236E-06"
+        izz="1.856E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l5"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_l4" />
+    <child
+      link="link_l5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l6">
+    <inertial>
+      <origin
+        xyz="0.038451 4.6462E-05 0.063125"
+        rpy="0 0 0" />
+      <mass
+        value="0.13935" />
+      <inertia
+        ixx="9.6304E-05"
+        ixy="-3.781E-10"
+        ixz="-1.7516E-05"
+        iyy="7.1049E-05"
+        iyz="-1.065E-09"
+        izz="8.241E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_l5" />
+    <child
+      link="link_l6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l7r">
+    <inertial>
+      <origin
+        xyz="-0.083182 0.0061024 0.0093037"
+        rpy="0 0 0" />
+      <mass
+        value="0.046957" />
+      <inertia
+        ixx="7.5505E-06"
+        ixy="2.8052E-06"
+        ixz="5.9927E-06"
+        iyy="9.4772E-05"
+        iyz="-5.5999E-07"
+        izz="8.8929E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l7r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l7r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l7r"
+    type="prismatic">
+    <origin
+      xyz="0.078 0 0.195"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_l6" />
+    <child
+      link="link_l7r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.06"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_l7l">
+    <inertial>
+      <origin
+        xyz="-0.087979 0.0061024 -0.0093037"
+        rpy="0 0 0" />
+      <mass
+        value="0.046957" />
+      <inertia
+        ixx="7.5505E-06"
+        ixy="2.8568E-06"
+        ixz="-6.0106E-06"
+        iyy="9.56E-05"
+        iyz="5.5999E-07"
+        izz="8.9757E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l7l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_l7l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l7l"
+    type="prismatic">
+    <origin
+      xyz="0.078 0 0.195"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_l6" />
+    <child
+      link="link_l7l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.06"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_pan">
+    <inertial>
+      <origin
+        xyz="7.4339E-05 0.033099 -0.027091"
+        rpy="0 0 0" />
+      <mass
+        value="0.087098" />
+      <inertia
+        ixx="3.1196E-05"
+        ixy="3.7815E-10"
+        ixz="-1.0586E-09"
+        iyy="2.6879E-05"
+        iyz="-5.5018E-06"
+        izz="1.8673E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_pan.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_pan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_head_pan"
+    type="revolute">
+    <origin
+      xyz="0.05 0 1.429"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_head_pan" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_tilt">
+    <inertial>
+      <origin
+        xyz="-0.0076351 5.9952E-15 -0.0029726"
+        rpy="0 0 0" />
+      <mass
+        value="0.032288" />
+      <inertia
+        ixx="5.5219E-06"
+        ixy="1.4324E-20"
+        ixz="5.4317E-08"
+        iyy="4.6642E-06"
+        iyz="-1.2451E-21"
+        izz="5.6225E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_tilt.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_tilt.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_head_tilt"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_head_pan" />
+    <child
+      link="link_head_tilt" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
