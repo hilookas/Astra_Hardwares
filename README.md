@@ -10,7 +10,7 @@
   <a href="https://www.notion.so/1b433900bc8780c4a503e3490ce3e718?pvs=21" target="_blank">Documentation</a> • 
   <a href="https://github.com/hilookas/astra_ws" target="_blank">ROS Code</a> •
   <a href="https://github.com/hilookas/AstraFirmwares" target="_blank">Firmware Code</a> •
-  <a href="https://github.com/hilookas/Astra_Hardwares" target="_blank">Hardware Code</a> •
+  <a href="https://github.com/hilookas/Astra_Hardwares" target="_blank">Hardware Design</a> •
   <a href="https://huggingface.co/lookas" target="_blank">Dataset</a>
 </div>
 
@@ -20,35 +20,24 @@ This repository contains hardware design resources for AhaRobot, organized into 
 
 ### Main Components
 
-- **Astra**: Main robot hardware design files
+- **Astra**: CAD files for AhaRobot
   - **STL/**: 3D printable STL model files
-  - **Aluminum_Profiles_STEP/**: Aluminum profile STEP files
-  - **Astra.STEP**: Complete robot model
-  - **Other files**: STEP models for motors, transmission components, and other parts
+  - **Aluminum_Profiles_STEP/**: Aluminum profile STEP files with [JLC FA](https://www.jlcfa.com/) part number
+  - **Astra.STEP**: The CAD model
 
-- **Astra_Teleop**: Robopilot teleoperation control device design
-  - **Ass.STL/Ass.3mf**: 3D printable models for remote control handle
+- **Astra_Teleop**: CAD files for Robopilot handles
 
 - **astra_description**: Robot description files for ROS2
   - **urdf/**: Unified Robot Description Format files
   - **meshes/**: Mesh models for visualization
   - **launch/**: ROS2 launch files
-  - **config/**: Configuration files
 
 ## How-to-use
 
-For detailed documentation, please refer to the following resources:
+For detailed documentation, please refer to our notion site:
 
-- [Getting Started Guide](docs/getting_started.md)
-  - Get Your AhaRobot Parts
-  - Bill of Materials
-  - 3D Printing Guide
-- [Hardware Assembly Guide](docs/assembly.md)
-  - Build Base
-  - Installing Two Sliding Rail (Body)
-  - Building Your Aha Arm
-  - Building Grippers and Heads
-  - Wiring
+<https://aha-robot.notion.site/Hardware-Assembly-Guide-1d733900bc87802b8833d968bfd26c55?pvs=74>
+
 
 ## License
 
